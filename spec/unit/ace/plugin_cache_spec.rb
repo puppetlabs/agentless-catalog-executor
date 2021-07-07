@@ -10,7 +10,7 @@ RSpec.describe ACE::PluginCache do
   let(:puppetserver_directory_path) { '/foo/' }
   let(:fake_file_path) { 'fake_file.rb' }
   let(:params) {
-    '?checksum_type=md5&environment=production&ignore=.hg&links=follow&max_files=-1&recurse=true&source_permissions='
+    '?checksum_type=sha256&environment=production&ignore=.hg&links=follow&max_files=-1&recurse=true&source_permissions='
   }
 
   before do
